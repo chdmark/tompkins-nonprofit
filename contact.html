@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Play with Passion</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src="js/script.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index-4">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="index.html">Play with Passion</a><span>Scholarship Fund</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="index.html">Home</a>
+								<!-- <ul>
+									<li><a href="#">Lorem ipsum</a></li>
+									<li><a href="#">Lorem ipsum</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Lorem ipsum</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Lorem ipsum</a></li>
+								</ul> -->
+							</li>
+							<!-- <li><a href="index-1.html">About</a></li> -->
+							<!-- <li><a href="index-2.html">Mission</a></li> -->
+							<!-- <li><a href="index-3.html">Services</a></li> -->
+							<li><a href="index-4.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=======content================================-->
+
+<!-- <section id="content">
+	<div class="full-width-container block-1">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h2><span>Our Locations</span></h2>
+					</header>
+					<div class="content_map">
+						<div class="google-map-api"> 
+							<div id="map-canvas" class="gmap"></div> 
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+		<!-- CONTACT -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<br><br><br><br>
+						<h1>Makeup Request Form</h1>
+						<p><span style="color: red;">Please use this form ONLY for make-up requests</span></p>
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+				<div class="col-sm-4 contact-info">
+					<ul id="makeuptext">
+						<li>All requests must be approved. </li>
+						<li>Make-up classes and waiting times are subject to availability and may be taken at any Tompkins Tennis location upon approval.</li>
+						<li>If you miss your makeup date, without 24 hours notice, it cannot be rescheduled. </li>
+					</ul>
+					<br><br>
+						<h3><span style="color: #8A0808;">rain + sickness policy</span></h3><br>
+						<p><span style="color: #40c2e9;"><b>CANCELLATIONS</b></span> We have a no-refund, no cancellation policy. Missed classes due to vacation, school, or family event require 30 days written/email notice AND confirmation.</p>
+
+						<p><span style="color: #40c2e9;"><b>RAIN POLICY</b></span> A rain credit will be applied toward the next session if class is cancelled. Please call <b>(510)573-4025</b> one hour in advance prior to your scheduled class time for more information on cancellations due to rain.</span></p>
+				</div>
+
+				
+				<div class="col-sm-7 col-sm-offset-1">
+					<form action="php/send-contact.php" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="student_name" required="required" placeholder="Student Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="email" name="email" required="required" placeholder="Email*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="phone" required="required" placeholder="Phone*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="class_name" required="required" placeholder="Class Name*">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="parent_name" required="required" placeholder="Parent Name*">
+							</div>
+							
+							<div class="col-sm-6">
+								<input type="text" name="class_location" required="required" placeholder="Location of Class*">
+							</div>
+							<div class="col-sm-6">
+								<p><b>*Date Missed:</b></p>
+								<input type="date" name="date_missed" required="required" placeholder="Date Missed*">
+							</div>
+							<div class="col-sm-6">
+								<p><b>*Preferred Makeup Date:</b></p>
+								<input type="date" name="makeup_date" required="required" placeholder="Preferred Makeup Day*">
+							</div>
+							
+		
+							<!-- <div class="col-sm-12">
+								<textarea name="message" cols="30" rows="7" placeholder="Additional info"></textarea>
+							</div> -->
+
+							
+							</div>
+							<br><br>
+							<p style="color: red;">*Required Fields</p>
+							<p style="color: red;">*Incorrectly filled out forms will not be honored</p>
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Message" class="btn btn-send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<h2><span>Follow Us</span></h2>
+				<a href="#" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer_bottom"><p>Designed By FCW @ Tompkins Sport International</p></div>
+</footer>
+<script type="text/javascript">
+	google_api_map_init();
+	function google_api_map_init(){
+		var map;
+		var coordData = new google.maps.LatLng(parseFloat(40.650408), parseFloat(-73.950030,12));
+		var markCoord1 = new google.maps.LatLng(parseFloat(40.650408), parseFloat(-73.950030));
+		var marker;
+		
+		function initialize() {
+			var mapOptions = {
+				zoom: 14,
+				center: coordData,
+				scrollwheel: false,
+			}
+
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			
+			marker = new google.maps.Marker({
+				map:map,
+				position: markCoord1,
+			});
+
+			google.maps.event.addDomListener(window, 'resize', function() {
+				map.setCenter(coordData);
+				var center = map.getCenter();
+			});
+		}
+
+		google.maps.event.addDomListener(window, "load", initialize); 
+
+	}
+
+</script>
+</body>
+</html>
